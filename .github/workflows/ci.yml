@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  execute-notebooks:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Execute all notebooks (network-optional)
+        env:
+          # Notebook 07 queries the live ChEMBL API and falls back to data/chembl_cache/
+          # if it is unreachable; set COURSE_OFFLINE=1 to force the cached path in CI.
+          COURSE_OFFLINE: "1"
+        run: |
+          for nb in notebooks/*.ipynb; do
+            echo "::group::$nb"
+            jupyter nbconvert --to notebook --execute --inplace \
+              --ExecutePreprocessor.timeout=1200 "$nb"
+            echo "::endgroup::"
+          done
+
+      - name: Confirm notebooks produced output
+        run: |
+          python - <<'PY'
+          import glob, nbformat, sys
+          bad = []
+          for f in sorted(glob.glob("notebooks/*.ipynb")):
+              nb = nbformat.read(f, 4)
+              if not any(c.cell_type == "code" and c.get("outputs") for c in nb.cells):
+                  bad.append(f)
+          if bad:
+              print("No outputs in:", bad); sys.exit(1)
+          print("All notebooks executed with outputs.")
+          PY

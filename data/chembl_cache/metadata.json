@@ -1,0 +1,13 @@
+{
+  "chembl_db_version": "ChEMBL_37",
+  "chembl_release_date": "2026-05-01",
+  "retrieved": "2026-11-24",
+  "target_query": "acetylcholinesterase",
+  "target_chembl_id": "CHEMBL220",
+  "filters": {
+    "standard_type": "IC50",
+    "assay_type": "B"
+  },
+  "order_by": "activity_id",
+  "records": 1000
+}

@@ -1,0 +1,32 @@
+target_chembl_id,pref_name,target_type,organism,score
+CHEMBL2242744,Acetylcholinesterase,SINGLE PROTEIN,Drosophila melanogaster,18.0
+CHEMBL220,Acetylcholinesterase,SINGLE PROTEIN,Homo sapiens,16.0
+CHEMBL4780,Acetylcholinesterase,SINGLE PROTEIN,Torpedo californica,16.0
+CHEMBL3198,Acetylcholinesterase,SINGLE PROTEIN,Mus musculus,16.0
+CHEMBL3199,Acetylcholinesterase,SINGLE PROTEIN,Rattus norvegicus,16.0
+CHEMBL4078,Acetylcholinesterase,SINGLE PROTEIN,Electrophorus electricus,16.0
+CHEMBL4768,Acetylcholinesterase,SINGLE PROTEIN,Bos taurus,16.0
+CHEMBL2046266,Acetylcholinesterase,SINGLE PROTEIN,Anopheles gambiae,16.0
+CHEMBL2366409,AChE2,SINGLE PROTEIN,Bemisia tabaci,16.0
+CHEMBL2366490,Acetylcholinesterase,SINGLE PROTEIN,Leptinotarsa decemlineata,16.0
+CHEMBL2366514,Ace-orthologous acetylcholinesterase,SINGLE PROTEIN,Nephotettix cincticeps,16.0
+CHEMBL3227914,Acetylcholinesterase,SINGLE PROTEIN,Gallus gallus,16.0
+CHEMBL3308995,Acetylcholinesterase,SINGLE PROTEIN,Danio rerio,16.0
+CHEMBL4295607,Acetylcholinesterase,SINGLE PROTEIN,Aedes aegypti,16.0
+CHEMBL6067022,Protein CutA,SINGLE PROTEIN,Homo sapiens,16.0
+CHEMBL5752,Acetylcholinesterase,SINGLE PROTEIN,Musca domestica,15.0
+CHEMBL2242729,Acetylcholinesterase,SINGLE PROTEIN,Plutella xylostella,15.0
+CHEMBL2242743,Acetylcholinesterase,SINGLE PROTEIN,Musca domestica,15.0
+CHEMBL2362988,Acetylcholinesterase,SINGLE PROTEIN,Pediculus humanus capitis,15.0
+CHEMBL2366422,Acetylcholinesterase,SINGLE PROTEIN,Spodoptera litura,15.0
+CHEMBL2366446,Acetylcholinesterase,SINGLE PROTEIN,Laodelphax striatella,15.0
+CHEMBL2366511,Acetylcholinesterase,SINGLE PROTEIN,Schizaphis graminum,15.0
+CHEMBL2095233,Cholinesterases; ACHE & BCHE,SELECTIVITY GROUP,Homo sapiens,14.0
+CHEMBL2111475,Acetylcholinesterase and butyrylcholinesterase (AChE and BChE),SELECTIVITY GROUP,Rattus norvegicus,14.0
+CHEMBL3341583,Acetylcholinesterase 1,SINGLE PROTEIN,Caenorhabditis elegans,14.0
+CHEMBL5077,Butyrylcholinesterase,SINGLE PROTEIN,Equus caballus,11.0
+CHEMBL5763,Cholinesterase,SINGLE PROTEIN,Equus caballus,11.0
+CHEMBL4630814,Cholinesterase,SINGLE PROTEIN,Canis lupus familiaris,11.0
+CHEMBL2528,Cholinesterase,SINGLE PROTEIN,Mus musculus,10.0
+CHEMBL3403,Butyrylcholinesterase,SINGLE PROTEIN,Rattus norvegicus,10.0
+CHEMBL1914,Cholinesterase,SINGLE PROTEIN,Homo sapiens,5.0

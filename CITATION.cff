@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Practical Cheminformatics Course"
+message: "If you use these materials, please cite them using the metadata below."
+type: dataset
+authors:
+  - family-names: Hentabli
+    given-names: Hamza
+    orcid: "https://orcid.org/0000-0002-9530-2815"
+repository-code: "https://github.com/hentablihamza/practical-cheminformatics-course"
+url: "https://github.com/hentablihamza/practical-cheminformatics-course"
+abstract: >
+  A hands-on, 12-notebook course that takes a beginner from Python and RDKit basics to
+  building, validating, and deploying QSAR models and virtual screens, using small real
+  public datasets (Delaney ESOL, ChEMBL). Every notebook runs in Google Colab with one click.
+keywords:
+  - cheminformatics
+  - RDKit
+  - drug discovery
+  - QSAR
+  - machine learning
+  - virtual screening
+  - education
+  - tutorial
+date-released: "2026-11-24"
